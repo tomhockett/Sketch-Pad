@@ -1,0 +1,14 @@
+#container {
+	height: 960px;
+	width: 960px;
+	margin: auto;
+}
+
+.pixel {
+	height: 14px;
+	width: 14px;
+	background-color: #1E1E1E;
+	display: inline-block;
+	margin: 0;
+	float: left;
+}
