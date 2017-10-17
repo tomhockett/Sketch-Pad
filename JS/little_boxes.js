@@ -15,7 +15,7 @@ $(document).ready(function() {
 		$(".pixel").width(height_and_width_of_box);
 
 		$("#container > div").hover(function () {
-			$(this).css("background-color", "#929292");
+			$(this).css("background-color", "var(--hl)");
 		});
-	});
+	});	
 });

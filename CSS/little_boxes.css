@@ -1,25 +1,51 @@
+/*
+ * CSS variables
+ */
+
+:root {
+	--base: #000000;
+	--hl: #ffc600;
+}
+
+body {
+	text-align: center;
+}
+
 #container {
 	height: 960px;
 	width: 960px;
 	margin: auto;
 }
 
+#controls {
+	margin-bottom: 8px;
+}
+
 .pixel {
 	height: 14px;
 	width: 14px;
-	background-color: #1E1E1E;
+	background-color: var(--base);
 	display: inline-block;
 	margin: 0;
 	float: left;
 }
 
 button {
-	height: 20px;
-	width: 200px;
+	height: 2em;
+	width: 100px;
 	border: 1px black solid;
-	border-radius: 5px;
+	border-radius: 10px;
+	margin-bottom: 8px;
+	color: white;
+	font-size: 1.1em;
+	background-color: blue;
+
 }
 
 #button {
 	text-align: center;
+}
+
+#button:focus {
+	outline: 0;
 }

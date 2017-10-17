@@ -8,6 +8,20 @@
 </head>
 <body>
 	<button id="button">Click Me!</button>
-	<div id='container'></div>
+	<div id="controls">
+		<label for="hl">Highlight Color</label>
+		<input type="color" name="hl" value="#ffc600">
+	</div>
+	<div id="container"></div>
+	<script>
+		const inputs = document.querySelectorAll('#controls input');
+		
+		function handleUpdate() {			
+			document.documentElement.style.setProperty(`--${this.name}`, this.value);
+		}
+		
+		inputs.forEach(input => input.addEventListener('change', handleUpdate));
+		
+	</script>
 </body>
 </html>
